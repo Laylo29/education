@@ -1,0 +1,15 @@
+.site-header{
+    background-color: $color-blue;
+    padding: 16px 0;
+}
+.header{
+    @include Display ($ITEMS: center, $SPACE: space-between, $GAP: 0px);
+
+    &__navbar{
+        @include Display ($ITEMS: center, $SPACE: start, $GAP:35px);
+    }
+    &__header_btn{
+        @include  ButtonStyle ( $btnClr: $color-black, $btnBg: $color-white, $btnBordClr: transparent)
+
+    }
+}
